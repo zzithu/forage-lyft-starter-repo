@@ -4,7 +4,7 @@ import car
 
 #consider adding some unique identifier, this will work I hope
 class CarFactory:
-    cars = {}
+    cars = {} #I dont know how powerful arrays are in python, but may consider changing in future
 
     def create_calliope(self, current_date, last_service_date, current_mileage, last_service_milage):
         self.cars.append(car(CapuletEngine(current_mileage, last_service_milage), SpindlerBattery(last_service_date, current_date)))
